@@ -1,4 +1,2 @@
-Moduels:
-Django,
-weaslyprint,
-locale.
+Django
+WeaslyPrint
