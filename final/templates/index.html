@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+    <div>
+        <h1 class="home_header">Invoice/Estimate Generator</h1>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">Free Invoice/Estimate Generator</h5>
+            <p class="card-text">A free invoice generator that converts into a pdf, when generated. Just input fields, and create your invoice!</p>
+            <a href="{% url 'invoice' %}" class="btn btn-primary">Click Here to Generate Invoice!</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-6">
+        <div class="card">
+            <div class="card-body">
+            <h5 class="card-title">History</h5>
+            <p class="card-text">View Your most Recent Invoice/Quote, with fields already filled out from your most recent submitted form</p>
+            <a href="{% url 'history' %}" class="btn btn-primary">Click To View your History</a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <style>
+        .home_header {
+            text-align: center;
+        }
+    </style>
+{% endblock %}
